@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#212121</color>
+    <color name="dark_icon_color">#000000</color>
+    <color name="ic_tint_color">@android:color/white</color>
+    <color name="colorCardView">#250C0D0E</color>
+</resources>

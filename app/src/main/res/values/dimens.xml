@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="m_8">8dp</dimen>
+    <dimen name="fs_normal">14sp</dimen>
+    <dimen name="fs_large">18sp</dimen>
+    <dimen name="fs_largest">25sp</dimen>
+
+    <dimen name="m_5">5dp</dimen>
+    <dimen name="m_20">20dp</dimen>
+    <dimen name="m_36">36dp</dimen>
+</resources>

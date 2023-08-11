@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCardView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/m_20"
+        android:layout_marginTop="@dimen/m_20">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvSchoolInfo"
+            android:layout_margin="@dimen/m_20"
+            android:layout_width="match_parent"
+            android:paddingRight="@dimen/m_20"
+            android:paddingLeft="@dimen/m_20"
+            app:cardBackgroundColor="@color/colorCardView"
+            app:cardCornerRadius="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/m_8"
+                android:padding="@dimen/m_8">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/PD_Txt_Tile"
+                    android:visibility="gone"
+                    android:textColor="@color/ic_tint_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Texas University, Washington" />
+
+                <TextView
+                    android:id="@+id/tvLocation"
+                    style="@style/PD_Txt_Tile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/ic_tint_color"
+                    app:layout_constraintTop_toBottomOf="@id/tvName"
+                    tools:text="Irving, Texas- 75065" />
+
+                <ImageView
+                    android:id="@+id/ivDial"
+                    style="@style/PD_Txt_Tile"
+                    android:layout_width="@dimen/m_36"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m_20"
+                    android:src="@drawable/ic_call"
+
+                    app:layout_constraintEnd_toEndOf="@id/tvCellNumber"
+                    app:layout_constraintStart_toStartOf="@id/tvCellNumber"
+                    android:contentDescription="@string/res_acc_click_here_to_dial_a_number"
+                    app:layout_constraintTop_toBottomOf="@id/tvLocation" />
+
+                <TextView
+                    android:layout_marginStart="@dimen/m_8"
+                    style="@style/PD_Txt_Tile"
+                    android:id="@+id/tvCellNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/m_8"
+                    android:gravity="center"
+                    android:textColor="@color/ic_tint_color"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivDial"
+                    tools:text="+425-61655-4486" />
+
+
+                <ImageView
+                    android:id="@+id/ivEmail"
+                    style="@style/PD_Txt_Tile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/ic_email"
+                    app:layout_constraintEnd_toEndOf="@id/tvEmail"
+                    app:layout_constraintStart_toStartOf="@id/tvEmail"
+                    android:contentDescription="@string/res_acc_click_here_to_send_a_email"
+                    app:layout_constraintTop_toTopOf="@id/ivDial" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/ic_tint_color"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ivEmail"
+                    app:layout_constraintTop_toTopOf="@id/tvCellNumber"
+                    tools:text="boobalaninfo@yahooo.com" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSubTitle"
+            style="@style/PD_Txt_Tile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="@dimen/m_20"
+            android:text="@string/sat_result_summary"
+            android:textSize="@dimen/fs_largest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvSchoolInfo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/ic_tint_color"
+            android:padding="@dimen/m_20"
+            app:layout_constraintTop_toBottomOf="@id/tvSubTitle">
+
+            <include
+                android:id="@+id/slTotal"
+                layout="@layout/score_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <include
+                android:id="@+id/slReading"
+                layout="@layout/score_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m_20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/slTotal" />
+
+            <include
+                android:id="@+id/slWriting"
+                layout="@layout/score_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/slMath"
+                app:layout_constraintStart_toEndOf="@id/slReading"
+                app:layout_constraintTop_toTopOf="@id/slReading" />
+
+            <include
+                android:id="@+id/slMath"
+                layout="@layout/score_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/slReading" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

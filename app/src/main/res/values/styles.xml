@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/dark_icon_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="materialCardViewStyle">@style/PD_CardView</item>
+
+    </style>
+
+    <style name="PD_Txt_Tile">
+        <item name="android:textSize">@dimen/fs_large</item>
+    </style>
+
+    <style name="PD_Description">
+        <item name="android:textSize">@dimen/fs_normal</item>
+    </style>
+
+    <style name="List_Title">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/fs_large</item>
+    </style>
+
+    <style name="PD_CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/colorCardView</item>
+    </style>
+</resources>

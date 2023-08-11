@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SchoolDetailsFragment">
+
+    <TextView
+        android:id="@+id/schoolName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="School Name" />
+
+    <TextView
+        android:id="@+id/satScoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/schoolName"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/satTestTakers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/satScoreTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:text="@string/testTakers"
+        android:textSize="19sp"
+        />
+
+    <TextView
+        android:id="@+id/readingAvgScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/satTestTakers"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:text="@string/avgReadingScore"
+        android:textSize="19sp"
+        />
+
+    <TextView
+        android:id="@+id/mathAvgScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/readingAvgScore"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:layout_centerHorizontal="true"
+        android:text="@string/avgMathScore"
+        android:textSize="19sp"
+        />
+
+    <TextView
+        android:id="@+id/writingAvgScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/avgWritingScore"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:layout_below="@+id/mathAvgScore"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>

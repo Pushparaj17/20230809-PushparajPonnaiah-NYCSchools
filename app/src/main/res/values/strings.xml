@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">20230809-PushparajPonnaiah-NYCSchools</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">NYC Schools</string>
+    <string name="second_fragment_label">School Details</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="sat_result_summary">SAT Result Summary</string>
+    <string name="test_take">Test Taken</string>
+    <string name="avg_reading">AVG. Reading</string>
+    <string name="avg_writing">AVG. Writing</string>
+    <string name="avg_math">AVG. Math</string>
+    <string name="res_acc_click_here_to_dial_a_number">Click here to dial a number</string>
+    <string name="res_acc_click_here_to_send_a_email">Click here to send a email</string>
+    <string name="msg_send_email">Send Email</string>
+    <string name="na">NA</string>
+
+    <string name="show_details">Show Details</string>
+    <string name="testTakers">No of Test Takers: </string>
+    <string name="avgReadingScore">Average Reading Score: </string>
+    <string name="avgWritingScore">Average Writing Score: </string>
+    <string name="avgMathScore">Average Maths Score: </string>
+
+    <string name="fetch_school_error">Unable to fetch schools</string>
+    <string name="network_error">No Network. Please try again later</string>
+</resources>

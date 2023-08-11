@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  * Copyright (c) 2020 .All rights are reserved by Boobalan Munusamy
+  ~  *
+  ~  * Unless required by applicable law or agreed to in writing, software distributed under
+  ~  * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+  ~  * CONDITIONS OF ANY KIND, either express or implied.
+  ~  */
+  ~
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@color/ic_tint_color"
+        android:pathData="M6,36h12v-4L6,32v4zM6,12v4h36v-4L6,12zM6,26h24v-4L6,22v4z" />
+</vector>
